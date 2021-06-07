@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminCabinetComponent } from './modules/admin/containers/admin-cabinet/admin-cabinet.component';
+import { AdminCabinetComponent } from './modules/admin/admin-cabinet/admin-cabinet.component';
 import { CheckWebapiComponent } from './modules/check-webapi/check-webapi.component';
 import { Error404Component } from './modules/error/error404/error404.component';
 import { Error500Component } from './modules/error/error500/error500.component';
-import { MainCabinetComponent } from './modules/main/containers/main-cabinet/main-cabinet.component';
+import { MainCabinetComponent } from './modules/main/main-cabinet/main-cabinet.component';
 
 const routes: Routes = [
   {path: '',
