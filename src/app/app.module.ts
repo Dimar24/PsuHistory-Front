@@ -7,7 +7,7 @@ import { Error404Component } from './modules/error/error404/error404.component';
 import { Error500Component } from './modules/error/error500/error500.component';
 import { CheckWebapiComponent } from './modules/check-webapi/check-webapi.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

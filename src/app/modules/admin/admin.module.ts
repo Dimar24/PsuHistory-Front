@@ -17,6 +17,9 @@ import { HomeComponent } from './pages/home/home.component';
     RouterModule,
 
     AdminRoutingModule
+  ],
+  exports: [
+    HomeComponent
   ]
 })
 export class AdminModule { }
