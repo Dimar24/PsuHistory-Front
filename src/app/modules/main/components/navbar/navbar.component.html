@@ -1,1 +1,36 @@
-<p>navbar works!</p>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+          <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <h1>SimpleCRM</h1>
+        <span class="menu-spacer"></span>
+        <div>
+
+          <a mat-button [routerLink]="'/'"> Home </a>
+          <a mat-button [routerLink]="'/map'"> Map </a>
+          <a mat-button [routerLink]="'/burial'"> Burials </a>
+          <a mat-button [routerLink]="'/about'"> About As </a>
+    
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+  
+        <a mat-button [routerLink]="'/'"> Home </a>
+        <a mat-button [routerLink]="'/map'"> Map </a>
+        <a mat-button [routerLink]="'/burial'"> Burials </a>
+        <a mat-button [routerLink]="'/about'"> About As </a>
+  
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div style="height: 88vh;">
+  
+        
+      </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
