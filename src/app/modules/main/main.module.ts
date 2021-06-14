@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { MapComponent } from './pages/map/map.component';
 import { BurialComponent } from './pages/burial/burial.component';
+import { LibraryModule } from 'src/app/core/library/library.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { BurialComponent } from './pages/burial/burial.component';
     CommonModule,
     ComponentsModule,
     RouterModule,
-    MainRoutingModule
+    MainRoutingModule,
+    LibraryModule,
+    FlexLayoutModule
   ],
   exports: [
     HomeComponent,
